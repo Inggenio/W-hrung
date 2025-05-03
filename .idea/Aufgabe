@@ -1,0 +1,25 @@
+1 Aufgabenbeschreibung
+Eine Wechselstube benötigt ein neues Programm zur Berechnung der Geldbeträge an
+Hand eines Wechselkurses. Neben den Eingabebetrag soll die Zielwährung ausgewählt werden können und nach dem
+Klick auf eine Schaltfläche die entsprechende Berechnung durchgeführt werden. Das Er-
+gebnis soll anschließend angezeigt werden.
+
+1.1 Einzelne Aufgabenteile:
+Folgende Teile der Aufgabe sind verpflichtend zu bearbeiten:
+• Erstellen einer GUI, die die angegebenen Felder entählt. (Punkte: 20)
+• Validieren Sie die Eingaben und führen Sie die gewünschte Umrechnung durch
+(Der Wechselkurs kann hardcoded, eingelesen oder ebenfalls über Eingabe in das
+Rechenprogramm gelangen.) (Punkte: 20)
+• Geben Sie das Ergebnis entsprechend aus, wenn die Berechnung durchgeführt wer-
+den konnte. (Punkte: 10)
+• Abhängig vom Wert soll das entsprechende Resultat ausgegeben werden (Punkte: 10)
+• Unit-Test für alle Methoden bei denen dies sinnvoll ist (Punkte: 10)
+
+Optionale Aufgabenteile:
+• Gesamtes Projekt auf GitHub führen (Punkte: 10) (Mich hinzufügen: huschkach)
+• Anfangswährung ebenfalls über Button/ComboBox/etc. auswählbar  (Punkte: 10)
+• Shortcuts über Tastatureingaben  (Punkte: 10)
+2• Grafisch aufwändigere GUI
+(Punkte: 10)
+• Ausgabe aller erfolgten Geldwechselvorgänge in eine Datei
+(Punkte: 10)
