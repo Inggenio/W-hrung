@@ -1,3 +1,5 @@
+package Programm;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,7 +12,10 @@ public class GUI {
 
 	JLabel message = new JLabel("Hola Helena");
 
-	JTextField wahrung1F = new JTextField(10);
+	//Währung 1
+	//JTextField wahrung1F = new JTextField(10);
+	String[] wahrungen = {}
+	JList wahrung1L = new JList();
 	JLabel wahrung1T = new JLabel("Ausgangswährung");
 
 	JTextField wahrung2F = new JTextField(10);
@@ -51,7 +56,7 @@ public class GUI {
 
 		gbc.gridx = 1;
 		gbc.gridy = 1;
-		panel.add(wahrung1F,gbc);
+		panel.add(wahrung1L,gbc);
 
 		gbc.gridx = 0;
 		gbc.gridy = 2;
