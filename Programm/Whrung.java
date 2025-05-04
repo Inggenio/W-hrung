@@ -8,6 +8,7 @@ public enum Whrung {
 	NOK,
 	SEK,
 	PLN,
+	ARS
 
 
 
