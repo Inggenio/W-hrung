@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.text.DecimalFormat;
 
 public class GUI {
@@ -186,15 +188,30 @@ public class GUI {
 					double ergebnis = Logik.zielBetragBerechnen(wah1, wah2, betrag);
 
 					//Ergebnis
-					zielBetragWert.setText(df.format(ergebnis) + " " + Logik.waerungenSymbol(wah2));
+					zielBetragWert.setText(df.format(ergebnis) + " " + Logik.getWaerungenSymbol(wah2));
 
 				} catch (NumberFormatException ex) {
 					zielBetragWert.setText("Betrag Ungültig");
 				}
+				LoggerClass.logger(
+						Logik.getWaerungenSymbol(wah1),
+						Logik.getWaerungenSymbol(wah2),
+						Logik.getWechselWert(wah1,wah2),
+						mengueField.getText(),
+						zielBetragWert.getText());
+				mengueField.setText("");
 			}
 		};
 		mengueField.addActionListener(berechnung);
 		knopf.addActionListener(berechnung);
+
+		meinFenster.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				LoggerClass.closer();
+				super.windowClosing(e);
+			}
+		});
 	}
 
 }
