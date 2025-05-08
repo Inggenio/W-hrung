@@ -10,6 +10,4 @@ public enum Whrung {
 	PLN,
 	ARS
 
-
-
 }
